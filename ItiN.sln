@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5196F666-2464-49EC-930C-56F4F9CFE16E}"
+	ProjectSection(SolutionItems) = preProject
+		ItiN1.vsmdi = ItiN1.vsmdi
+		localtestrun.testrunconfig = localtestrun.testrunconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "References", "References", "{D177CF8B-2FBE-4131-934C-EF29D6443E13}"
+	ProjectSection(SolutionItems) = preProject
+		References\Interop.SHDocVw.dll = References\Interop.SHDocVw.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItiN", "ItiN\ItiN.csproj", "{7C7C1843-8316-469E-AA44-B276795650D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itin.Tests", "ItiN.Tests\Itin.Tests.csproj", "{78667B58-40FD-4C5B-A832-819A83946778}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs03.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ItiN.Tests\\Itin.Tests.csproj
+		SccProjectName1 = ItiN.Tests
+		SccLocalPath1 = ItiN.Tests
+		SccProjectUniqueName2 = ItiN\\ItiN.csproj
+		SccProjectName2 = ItiN
+		SccLocalPath2 = ItiN
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = ItiN1.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C7C1843-8316-469E-AA44-B276795650D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C7C1843-8316-469E-AA44-B276795650D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C7C1843-8316-469E-AA44-B276795650D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C7C1843-8316-469E-AA44-B276795650D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78667B58-40FD-4C5B-A832-819A83946778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78667B58-40FD-4C5B-A832-819A83946778}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78667B58-40FD-4C5B-A832-819A83946778}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78667B58-40FD-4C5B-A832-819A83946778}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

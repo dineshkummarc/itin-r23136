@@ -1,0 +1,172 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C7C1843-8316-469E-AA44-B276795650D6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ItiN</RootNamespace>
+    <AssemblyName>ItiN</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.SHDocVw, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Interop.SHDocVw.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.InfoPath, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.Office.Interop.InfoPath.Xml, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseDialogHandler.cs" />
+    <Compile Include="DialogHandlers\AutoCompleteDialogHandler.cs" />
+    <Compile Include="DialogHandlers\OpenFormDialogHandlers.cs" />
+    <Compile Include="DialogHandlers\ReplaceFormAlertHandler.cs" />
+    <Compile Include="DialogHandlers\SaveDialogHandlers.cs" />
+    <Compile Include="DialogHandlers\SecurityAlertHandler.cs" />
+    <Compile Include="DialogHandlers\SubmitDialogHandlers.cs" />
+    <Compile Include="HTMLDocument\BaseElementCollection.cs" />
+    <Compile Include="HTMLDocument\Button.cs" />
+    <Compile Include="DialogWatcher.cs" />
+    <Compile Include="HTMLDocument\ButtonCollection.cs" />
+    <Compile Include="HTMLDocument\CheckBox.cs" />
+    <Compile Include="HTMLDocument\CheckBoxCollection.cs" />
+    <Compile Include="HTMLDocument\Div.cs" />
+    <Compile Include="HTMLDocument\DivCollections.cs" />
+    <Compile Include="HTMLDocument\Document.cs" />
+    <Compile Include="HTMLDocument\DomContainer.cs" />
+    <Compile Include="HTMLDocument\Element.cs" />
+    <Compile Include="HTMLDocument\ElementCollection.cs" />
+    <Compile Include="HTMLDocument\ElementFinder.cs" />
+    <Compile Include="HTMLDocument\ElementsContainer.cs" />
+    <Compile Include="HTMLDocument\ElementsSupport.cs" />
+    <Compile Include="HTMLDocument\FindBy.cs" />
+    <Compile Include="HTMLDocument\Frame.cs" />
+    <Compile Include="HTMLDocument\FrameCollection.cs" />
+    <Compile Include="DialogHandlers\LogonDialogHandler.cs" />
+    <Compile Include="UtilityClasses\Constraints\NotConstraint.cs" />
+    <Compile Include="UtilityClasses\Interfaces.cs" />
+    <Compile Include="HTMLDocument\Option.cs" />
+    <Compile Include="HTMLDocument\OptionCollection.cs" />
+    <Compile Include="HTMLDocument\PopupDialog.cs" />
+    <Compile Include="HTMLDocument\PopupDialogCollection.cs" />
+    <Compile Include="HTMLDocument\RadioButton.cs" />
+    <Compile Include="HTMLDocument\RadioButtonCollection.cs" />
+    <Compile Include="HTMLDocument\RadioCheck.cs" />
+    <Compile Include="HTMLDocument\SelectList.cs" />
+    <Compile Include="HTMLDocument\SelectListCollection.cs" />
+    <Compile Include="HTMLDocument\Span.cs" />
+    <Compile Include="HTMLDocument\SpanCollection.cs" />
+    <Compile Include="HTMLDocument\Style.cs" />
+    <Compile Include="HTMLDocument\TextField.cs" />
+    <Compile Include="HTMLDocument\TextFieldCollection.cs" />
+    <Compile Include="IEDom.cs" />
+    <Compile Include="InfopathTester.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UtilityClasses\Constraints\AttributeConstraint.cs" />
+    <Compile Include="UtilityClasses\Constraints\BaseConstraint.cs" />
+    <Compile Include="UtilityClasses\Exceptions.cs" />
+    <Compile Include="UtilityClasses\Logging.cs" />
+    <Compile Include="UtilityClasses\Settings.cs" />
+    <Compile Include="UtilityClasses\UtilityClass.cs" />
+    <Compile Include="UtilityClasses\SimpleTimer.cs" />
+    <Compile Include="UtilityClasses\Win32.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{00000205-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MSHTML">
+      <Guid>{3050F1C5-98B5-11CF-BB82-00AA00BDCE0B}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MSXML2">
+      <Guid>{F5078F18-C551-11D3-89B9-0000F81FE221}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
